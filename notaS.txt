@@ -1,0 +1,26 @@
+ref: Docker Compose Tutorial for Beginners (Networks - Volumes - Secrets - Postgres - Letsencrypt)
+https://www.youtube.com/watch?v=YMBT1NguJJw
+18:58
+
+1) mkdir flask 
+2) cd flask 
+3) python3 -m venv .venv
+
+   venv -> Creation of virtual environments
+   The venv module supports creating lightweight "virtual environments"
+
+4) source .venv/bin/activate
+5) pip install Flask
+6) pip freeze > requirements.txt
+
+   source env.sh # exporta APP_VERSION
+
+7) flask --app app requirements
+
+8) Install gunicorn
+   pip install gunicorn 
+   pip freeze > requirements.txt  # update the requirements.txt, necessary
+
+9) deactivate # Desativa ambiente virtual
+
+10) docker build -t apura/flask:0.1.0 .
