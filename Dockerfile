@@ -1,4 +1,4 @@
-FROM python:3.12.4-alphine3.20
+FROM python:3.12.5-alpine3.20
 
 # We need curl for the health check
 RUN apk --no-cache add curl
